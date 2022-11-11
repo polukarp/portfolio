@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+
+    .nav-logo {
+        @apply text-sky-600 hover:text-sky-700 ease-out;
+    }
+    .skills-logo {
+        @apply max-h-[124px]
+    }
+    .darken {
+        @apply hover:brightness-90
+    }
+}

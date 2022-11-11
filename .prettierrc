@@ -1,0 +1,5 @@
+{
+  "[javascript]": {
+    "prettier.singleQuote": false
+  }
+}
