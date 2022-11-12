@@ -6,11 +6,16 @@ import {
   faGithub,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import { Button } from "@chakra-ui/react";
+import { Switch } from "@chakra-ui/react";
+import { useColorMode } from "@chakra-ui/react";
 
 const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <header className="flex justify-between lowercase p-4">
-      <span className="logo">polukarp</span>
+      <Switch size="lg" onChange={toggleColorMode} />
       <nav>
         <ul className="flex gap-6">
           <a target="_blank" href="https://t.me/polukarp">
